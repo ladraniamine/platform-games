@@ -1,0 +1,207 @@
+@use '../custom' as *;
+@use  "../components/mixin" as*;
+
+
+.games-section{
+    width: 100%;
+    height: 800px;
+    background-color: $primary;
+
+
+    .category{
+        background-color: #03b3de;
+        
+
+        h2{
+            text-transform: uppercase;
+        }
+
+        // CATEGORY ITEM 
+        &-item{
+            width: 80%;
+            height: 40px;
+            background-color: rgb(27 101 225 / 24%);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            transition: 0.25s;
+
+            &:hover{
+                width: 100%;
+                background-color: rgba(32, 215, 32, 0.548);
+                cursor: pointer;
+            }
+
+            h6{
+                color: #fff;
+                flex: 3;
+                text-align: center;
+              
+            }
+            
+            .item-icon{
+                flex: 1;
+                .icon{
+                    position: relative;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin: auto;
+
+                    img{
+                        width: 70%;
+                        height: 70%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        
+                    }
+                }
+            }
+
+
+        }
+
+        .category-item-active{
+            width: 100%;
+            background-color: rgba(32, 215, 32, 0.548);
+        }
+
+
+
+    }
+
+    .games{ //games
+        background-color: $primary;
+      
+
+       
+        .input-group{ //search bar
+            width: 50%;
+            margin: auto;
+            
+            input{
+                background-color: #CCF2F4;
+                border-radius: 20px 0px 0px 20px;
+                text-transform: capitalize;
+                border: 2px solid #0090FF;
+                border-right: 0;
+
+            }
+            button{
+                border-radius: 0px 20px 20px 0px;
+                background-color: #075c70;
+                width: 40px;
+                 height: 38px;
+                 border: 2px solid #0090FF;
+                 top: 1px;
+                 border-left: 0;
+                 position: relative;
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        } //search bar
+       
+        .all-cards{ //cards
+    
+            .card{
+                    border: 2px solid $secondary;
+                    background-color: rgba(255, 255, 255, 0.555);
+                    transition: 0.5s;
+                    max-width: 19rem;
+
+                    &:hover{
+                        transform: scale(1.05);
+                        box-shadow: 0px 0px 42px -1px rgb(118, 118, 118);
+                    }
+                img{
+                    height: 232px;
+                }
+                .card-body{
+                    height: 90px;
+                    position: relative;
+                    background-color: rgba(255, 255, 255, 0.468);
+
+                    h5{
+                        text-transform: uppercase;
+                        text-decoration-line: underline;
+
+                    }
+                    p{     
+                        font-size: 10px;
+                        font-weight: 500;
+                        position: absolute;
+                        top: 31px;
+                        left: 0;
+                        width: 100%;
+                        .nbr-of-downloaded{
+                            color: rgb(14, 181, 14);
+                            font-weight: bold;
+                        }
+                        .category-of-card{
+                            color: red;
+                            font-weight: bold;
+                        }
+                    }
+                    button{
+                        position: absolute;
+                        bottom: 4px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        height: 25px;
+                        width: 90%;                 
+                        font-size: 14px;
+                        line-height: 0.5;
+                        background-color: #4DAE16;
+                        border-radius: 30px;
+                        color: #fff;
+                        transition: 0.2s;
+                        &:hover{
+                            background-color: rgba(255, 255, 255, 0.144);
+                            color: #4DAE16;
+                            border: 2px solid #4DAE16;
+                        }   
+                    }
+                }
+            }
+        } //cards
+
+        .pages-btn{
+            background-color: $primary;
+            >div{
+              text-align: center;
+              div{
+                margin-bottom: 5px;
+              
+              }
+            }
+            
+        }
+
+    } //games
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} //games section
+

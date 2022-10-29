@@ -1,0 +1,40 @@
+@use '../custom'as*;
+@use  "../components/mixin" as*;
+
+
+nav{
+    background-color: $primary;
+    box-shadow: -5px 4px 33px -3px $primary;
+    
+
+    .navbar-brand{
+        width: 100px;
+        height: 50px;
+    }
+    
+
+    .nav-item{
+       
+        margin: 10px 30px 10px 30px;
+        a{
+            padding: 6px 22px 6px 22px !important;
+            font-size: 20px;
+            text-transform: capitalize;
+            color: rgb(31, 31, 31) !important;
+            border-radius: 0px 37px 0px 23px;
+            border: 1px solid rgba(255, 255, 255, 0);
+             letter-spacing: 3px;
+             font-weight: 500;
+             transition: 0.4s;
+
+
+            &:focus, &:hover{
+                background-color: rgb(24 19 175 / 14%);
+                color: #fff !important;
+                border: 1px solid #fff;
+            }
+        }
+
+      
+    }
+}

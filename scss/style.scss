@@ -1,0 +1,16 @@
+
+@use 'custom' ;
+
+//IMPORT THE COMPONENTS
+
+@use "components/background";
+@use "components/bottons";
+@use "components/mixin";
+@use "components/typograpgy";
+
+// IMPORT MY SECTIONS
+
+@use "sections/navbar";
+@use "sections/home";
+@use "sections/games";
+

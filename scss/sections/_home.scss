@@ -1,0 +1,95 @@
+@use '../custom' as *;
+@use  "../components/mixin" as*;
+
+
+.carousel{
+    margin-top: 66px;
+
+    .layer{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #000000b8;
+         z-index: 1;
+    }
+
+    h1{
+       
+        position: absolute;
+        top: 22%;
+        left: 9%;
+        color: #fff;
+        z-index: 5;
+        font-size: 91px;
+        text-transform: uppercase;
+        span{
+            color: $primary-light;
+        }
+    }
+
+    p{
+       
+        position: absolute;
+        left: 9%;
+        bottom: 15%;
+        color: #ffffffd7;
+        z-index: 5;
+        font-size: 19px;
+        width: 568px;
+    }
+
+
+    .carousel-indicators{
+        z-index: 4;
+    }
+
+
+    .carousel-inner{
+        height: 350px;
+
+        .carousel-item{
+            position: static;
+            width: 100%;
+            height: 100%;
+
+            img{
+                height: 100% ;
+            }
+
+            .carousel-caption{
+                right: -50%;
+                z-index: 3;
+                button{
+                    background-color: $primary;
+                    border-radius: 12px;
+                    border: 2px solid $primary;
+                    color: #fff;
+                    font-weight: 400;
+                    transition: 0.2s;
+                    &:hover{
+                        color: $primary;
+                        background-color: rgba(255, 255, 255, 0);
+                        transform: scaleX(1.1);
+                    }
+                }
+            }
+        }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

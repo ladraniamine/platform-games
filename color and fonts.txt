@@ -1,0 +1,24 @@
+les color
+ background color :#361040;
+ btn-color:#ff5b7d;
+ btn-color-2:#02ccc0;
+
+ body font 
+ font-family: 'Nunito', sans-serif;
+
+
+icon header 
+ <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+ <i class="fa fa-search" aria-hidden="true"></i>
+
+ icon les flech
+ --> <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+ <-- <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+
+ footer icons
+
+ location <i class="fa fa-map-marker" aria-hidden="true"></i>
+ phone <i class="fa fa-phone" aria-hidden="true"></i>
+ email <i class="fa fa-envelope" aria-hidden="true"></i>
+
+ social media icons
